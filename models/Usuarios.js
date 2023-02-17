@@ -3,11 +3,14 @@ const  db  =  require("../db/connection");
 
 
 
-const usuarios = db.define('Usuarios',{
+const usuarios = db.define('usuarios',{
         nombre:{
             type:DataTypes.STRING
         },
         email:{
+            type:DataTypes.STRING
+        },
+        password:{
             type:DataTypes.STRING
         },
     
